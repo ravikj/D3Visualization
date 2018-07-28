@@ -195,7 +195,7 @@
             } );
             
             //Scatterplot
-            d3.csv('https://github.com/ravikj/D3Visualization/blob/master/data/scatterplot.csv', function (data) {
+            d3.csv('https://raw.githubusercontent.com/ravikj/D3Visualization/master/data/scatterplot.csv', function (data) {
                 data.forEach(function(d) { // convert strings to numbers
                     d.LifeExpectancy = +d.LifeExpectancy;
                     d.HealthExpPerCapita = +d.HealthExpPerCapita;
@@ -383,7 +383,7 @@
 
 
 	    // Get the data
-            d3.csv("https://github.com/ravikj/D3Visualization/blob/master/data/linechart1.csv", function(error, data) {
+            d3.csv("https://raw.githubusercontent.com/ravikj/D3Visualization/master/data/linechart1.csv", function(error, data) {
             data.forEach(function(d) {
                 d.Year = d.Year;
                 d.HealthExpPerCapita = +d.HealthExpPerCapita;
@@ -550,7 +550,7 @@
                 .text("Life Expectancy since 2000");
 
             // Get the data
-            d3.csv("https://github.com/ravikj/D3Visualization/blob/master/data/linechart2.csv", function(error, data) {
+            d3.csv("https://raw.githubusercontent.com/ravikj/D3Visualization/master/data/linechart2.csv", function(error, data) {
             data.forEach(function(d) {
                 d.Year = d.Year;
                 d.LifeExpectancy = +d.LifeExpectancy;
